@@ -8,6 +8,8 @@
 #include <iostream>
 
 using std::string;
+using std::cout;
+using std::endl;
 
 class Videojuego
 {
@@ -23,15 +25,15 @@ class Videojuego
 
     virtual ~Videojuego(); //Destructor
 
-    void mostrar const(); //Declaración de la función mostrar
+    void mostrar() const; //Declaración de la función mostrar
 
-    const string &getCodigo() const;
+    string getCodigo() const;
 
-    const string &getNombre() const;
+    string getNombre() const;
 
-    const string &getGenero() const;
+    string getGenero() const;
 
-    int getNivelDificultad();
+    int getNivelDificultad() const;
 
 };
 

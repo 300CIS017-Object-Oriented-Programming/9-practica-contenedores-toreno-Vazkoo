@@ -10,6 +10,8 @@
 
 using std::string;
 using std::vector;
+using std::cout;
+using std::endl;
 
 class Jugador
 {
@@ -26,7 +28,7 @@ class Jugador
 
     virtual ~Jugador();
 
-    const string &getNickname() const;
+    const string getNickname() const;
 
     int getNivelRanking() const;
 }
